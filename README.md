@@ -69,4 +69,5 @@ The goal is to understand how Java fundamentals can be used to build a real-worl
 ## 👨‍💻 Author
 
 **Kunal Maity**
+
 This project is continuously evolving as I learn and improve my Java programming skills.
