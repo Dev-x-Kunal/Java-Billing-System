@@ -16,10 +16,11 @@ public class Billing {
         int p5 = 35;  //  Salt = 35
 
         int bill=0;
+
         System.out.print("Enter Customer Name: ");
         String Name = sc.nextLine();
         System.out.print("Enter Customer Ph Number: ");
-        int Num= sc.nextInt();
+        Double Num= sc.nextDouble();
         do{
             System.err.println("1. Rice = 60" );
             System.err.println("2. Sugar = 40" );
@@ -31,19 +32,29 @@ public class Billing {
             System.out.print("Enter Item no: ");
             a = sc.nextInt();
             if(a == 1){
-                bill = bill + p2;
+                System.out.print("Enter Quantity: ");
+                int Q =sc.nextInt();
+                bill = bill + p2 *Q;
                 System.out.println("Rice added successfully");
             } else if (a == 2){
-                bill = bill + p1;
+                System.out.print("Enter Quantity: ");
+                int Q =sc.nextInt();
+                bill = bill + p1*Q;
                 System.out.println("sugar added successfully");
             }else if (a == 3){
-                bill = bill + p3;
+                System.out.print("Enter Quantity: ");
+                int Q =sc.nextInt();
+                bill = bill + p3*Q;
                 System.out.println( "Oil added successfully");
             }else if (a == 4){
-                bill = bill + p4;
+                System.out.print("Enter Quantity: ");
+                int Q =sc.nextInt();
+                bill = bill + p4*Q;
                 System.out.println( "Soap added successfully");
             }else if (a == 5){
-                bill = bill + p5;
+                System.out.print("Enter Quantity: ");
+                int Q =sc.nextInt();
+                bill = bill + p5*Q;
                 System.out.println( "Salt added successfully");
             }
         }while(a != 6);
