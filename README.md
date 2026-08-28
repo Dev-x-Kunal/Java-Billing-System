@@ -36,7 +36,7 @@ The current version allows customers to select multiple products and calculates 
 
 The project will be improved gradually as I learn new Java concepts.
 
-* [ ] Add quantity support
+* [✅] Add quantity support
 * [ ] Display purchased items in the bill
 * [ ] Improve bill receipt
 * [ ] Add Arrays
