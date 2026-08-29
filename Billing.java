@@ -15,6 +15,12 @@ public class Billing {
 
         int p5 = 35;  //  Salt = 35
 
+        int p6 = 35;  //  Ghee = 220 per 500g
+
+        int p7 = 35;  //  Milk = 38
+
+        int p8 = 35;  //  Butter = 80
+
         int bill=0;
 
         System.out.print("Enter Customer Name: ");
@@ -27,7 +33,10 @@ public class Billing {
             System.err.println("3. Oil = 120" );
             System.err.println("4. Soap = 20" );
             System.err.println("5. Salt = 35" );
-            System.err.println("6. Bill" );
+            System.err.println("6. Ghee = 220 per 500g" );
+            System.err.println("7. Milk = 38" );
+            System.err.println("8. Butter = 80" );
+            System.err.println("9. Bill" );
 
             System.out.print("Enter Item no: ");
             a = sc.nextInt();
@@ -56,8 +65,23 @@ public class Billing {
                 int Q =sc.nextInt();
                 bill = bill + p5*Q;
                 System.out.println( "Salt added successfully");
-            }
-        }while(a != 6);
+            } else if (a == 6){
+                System.out.print("Enter Quantity: ");
+                int Q =sc.nextInt();
+                bill = bill + p6*Q;
+                System.out.println( "Ghee added successfully");
+            } else if (a == 7){
+                System.out.print("Enter Quantity: ");
+                int Q =sc.nextInt();
+                bill = bill + p7*Q;
+                System.out.println( "Milk added successfully");
+            }  else if (a == 8){
+                System.out.print("Enter Quantity: ");
+                int Q =sc.nextInt();
+                bill = bill + p8*Q;
+                System.out.println( "Butter added successfully");
+            }  
+        }while(a != 9);
         System.out.println("      ");
         System.out.println("====Jhonny's Kirana Store====");
         System.out.println("==      Bill Receipt      ==");

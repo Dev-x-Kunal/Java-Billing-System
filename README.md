@@ -38,7 +38,7 @@ The project will be improved gradually as I learn new Java concepts.
 
 * [✅] Add quantity support
 * [ ] Display purchased items in the bill
-* [ ] Improve bill receipt
+* [✅] Improve bill receipt
 * [ ] Add Arrays
 * [ ] Add Methods
 * [ ] Add item search
