@@ -21,7 +21,8 @@ public class Billing {
 
         int p8 = 35;  //  Butter = 80
 
-        int bill=0;
+        double bill=0;
+        
 
         System.out.print("Enter Customer Name: ");
         String Name = sc.nextLine();
@@ -36,7 +37,8 @@ public class Billing {
             System.err.println("6. Ghee = 220 per 500g" );
             System.err.println("7. Milk = 38" );
             System.err.println("8. Butter = 80" );
-            System.err.println("9. Bill" );
+            System.err.println("9. Discount" );
+            System.err.println("10. Bill" );
 
             System.out.print("Enter Item no: ");
             a = sc.nextInt();
@@ -80,8 +82,13 @@ public class Billing {
                 int Q =sc.nextInt();
                 bill = bill + p8*Q;
                 System.out.println( "Butter added successfully");
-            }  
-        }while(a != 9);
+            }  else if (a == 9){
+                System.out.print("Enter Discount: ");
+                int discount =sc.nextInt();
+                bill = bill -(bill * discount/100);
+                System.out.println( "discount added successfully");
+            }
+        }while(a != 10);
         System.out.println("      ");
         System.out.println("====Jhonny's Kirana Store====");
         System.out.println("==      Bill Receipt      ==");
