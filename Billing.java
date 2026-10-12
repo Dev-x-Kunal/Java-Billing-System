@@ -5,7 +5,7 @@ public class Billing {
         Scanner sc =new Scanner(System.in);
         int a=0;
 
-        int p1 = 40; //  Sugar = 40
+        int p1 = 50; //  Sugar = 50
                
         int p2 = 60; // Rice = 60
         
@@ -13,7 +13,7 @@ public class Billing {
 
         int p4 = 20; // Soap = 20
 
-        int p5 = 35;  //  Salt = 35
+        int p5 = 40;  //  Salt = 40
 
         int p6 = 35;  //  Ghee = 220 per 500g
 
