@@ -15,7 +15,7 @@ public class Billing {
 
         int p5 = 40;  //  Salt = 40
 
-        int p6 = 35;  //  Ghee = 220 per 500g
+        int p6 = 220;  //  Ghee = 220 per 500g
 
         int p7 = 35;  //  Milk = 35
 
@@ -34,10 +34,10 @@ public class Billing {
         Double Num= sc.nextDouble();
         do{
             System.err.println("1. Rice = 60" );
-            System.err.println("2. Sugar = 40" );
+            System.err.println("2. Sugar = 50" );
             System.err.println("3. Oil = 120" );
             System.err.println("4. Soap = 20" );
-            System.err.println("5. Salt = 35" );
+            System.err.println("5. Salt = 40" );
             System.err.println("6. Ghee = 220 per 500g" );
             System.err.println("7. Milk = 35" );
             System.err.println("8. Butter = 50" );
