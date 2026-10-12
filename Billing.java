@@ -17,9 +17,13 @@ public class Billing {
 
         int p6 = 35;  //  Ghee = 220 per 500g
 
-        int p7 = 35;  //  Milk = 38
+        int p7 = 35;  //  Milk = 35
 
-        int p8 = 35;  //  Butter = 80
+        int p8 = 50;  //  Butter = 50
+
+        int p9 = 10;  //  Shampoo = 10
+
+        int p10 = 42;  //  Atta = 42
 
         double bill=0;
         
@@ -35,10 +39,12 @@ public class Billing {
             System.err.println("4. Soap = 20" );
             System.err.println("5. Salt = 35" );
             System.err.println("6. Ghee = 220 per 500g" );
-            System.err.println("7. Milk = 38" );
-            System.err.println("8. Butter = 80" );
-            System.err.println("9. Discount" );
-            System.err.println("10. Bill" );
+            System.err.println("7. Milk = 35" );
+            System.err.println("8. Butter = 50" );
+            System.err.println("9. Shampoo = 10" );
+            System.err.println("10. Atta = 42" );
+            System.err.println("11. Discount" );
+            System.err.println("12. Bill" );
 
             System.out.print("Enter Item no: ");
             a = sc.nextInt();
@@ -83,12 +89,22 @@ public class Billing {
                 bill = bill + p8*Q;
                 System.out.println( "Butter added successfully");
             }  else if (a == 9){
+                System.out.print("Enter Quantity: ");
+                int Q =sc.nextInt();
+                bill = bill + p9*Q;
+                System.out.println( "Shampoo added successfully");
+            } else if (a == 10){
+                System.out.print("Enter Quantity: ");
+                int Q =sc.nextInt();
+                bill = bill + p10*Q;
+                System.out.println( "Atta added successfully");
+            } else if (a == 11){
                 System.out.print("Enter Discount: ");
                 int discount =sc.nextInt();
                 bill = bill -(bill * discount/100);
                 System.out.println( "discount added successfully");
-            }
-        }while(a != 10);
+            } 
+        }while(a != 12);
         System.out.println("      ");
         System.out.println("====Jhonny's Kirana Store====");
         System.out.println("==      Bill Receipt      ==");
